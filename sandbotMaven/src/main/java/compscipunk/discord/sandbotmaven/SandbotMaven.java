@@ -25,7 +25,7 @@ public class SandbotMaven {
      */
     public static void main(String[] args) {
         try {
-            JDA api = new JDABuilder(AccountType.BOT).setToken("MjU4NDYzOTc1OTI1MDg4MjU2.Czd1gQ.k8fxV-vtuSfYPoYZ8o6w00TrSfE").addListener(new Commands()).buildBlocking();
+            JDA api = new JDABuilder(AccountType.BOT).setToken("<enter token here>").addListener(new Commands()).buildBlocking();
             api.getPresence().setGame(Game.of("admin... | !help"));
         } catch (LoginException | IllegalArgumentException | InterruptedException | RateLimitedException ex) {
             Logger.getLogger(SandbotMaven.class.getName()).log(Level.SEVERE, null, ex);
